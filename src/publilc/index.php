@@ -11,10 +11,16 @@
 //     var_dump($class);
 // });
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
+use App\DB;
+use App\Enums\Status;
 use App\PaymentGateway\Paddle\Transaction;
  
-$paddleTransaction = new Transaction();
+$paddleTransaction = new Transaction(25);
+$paddleTransaction->process();
+// $paddleTransaction->copyForm(new Transaction(100));
 
-var_dump($paddleTransaction);
+// var_dump($paddleTransaction->setStatus(Status::PENDING));
+
+// $db = DB::getInstance([]);
