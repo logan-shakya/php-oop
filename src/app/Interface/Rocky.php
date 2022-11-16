@@ -1,4 +1,5 @@
 <?php
+namespace App\Interface;
 
 use App\Interface\DebtCollector;
 

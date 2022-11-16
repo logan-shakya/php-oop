@@ -21,10 +21,6 @@ class ComposerStaticInitefbc4deba33080eeb3d8b7d50e8efefc
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
-        'I' => 
-        array (
-            'Interface\\' => 10,
-        ),
         'B' => 
         array (
             'Brick\\Math\\' => 11,
@@ -47,10 +43,6 @@ class ComposerStaticInitefbc4deba33080eeb3d8b7d50e8efefc
         'Ramsey\\Collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
-        ),
-        'Interface\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/app/Interface',
         ),
         'Brick\\Math\\' => 
         array (

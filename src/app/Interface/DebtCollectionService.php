@@ -1,10 +1,11 @@
 <?php
 
-use App\Interface\CollectionAgency;
+namespace App\Interface;
+use App\Interface\DebtCollector;
 
 class DebtCollectionService 
 {
-    public function collectDebt( CollectionAgency $collector)
+    public function collectDebt( DebtCollector $collector)
     {
         $owedAmount = mt_rand(100,1000);
         $collectedAmount = $collector->collect($owedAmount);

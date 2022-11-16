@@ -1,8 +1,9 @@
 <?php
-
 require __DIR__ . '../../../../../vendor/autoload.php';
-use Interface\DebtCollectionService;
-use Interface\Rocky;
+
+use App\Interface\DebtCollectionService;
+use App\Interface\Rocky;
+
 // $collector = new CollectionAgency;
 // echo $collector->collect(100) . PHP_EOL;
 
