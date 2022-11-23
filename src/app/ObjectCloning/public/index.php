@@ -6,6 +6,14 @@ require_once '../../../../vendor/autoload.php';
 
 $invoice = new \App\ObjectCloning\Invoice();
 
-$invoice2 = new $invoice;
+$invoice2 = clone $invoice;
+$invoice3 = $invoice;
 
-var_dump($invoice, $invoice2, Invoice::create());
+echo("Object created: ");
+var_dump($invoice);
+
+echo("Cloned Object: ");
+var_dump($invoice2);
+
+echo("Created with = operator: ");
+var_dump($invoice3);
