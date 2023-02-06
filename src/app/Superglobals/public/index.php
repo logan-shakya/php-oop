@@ -20,4 +20,10 @@ $router->register('/invoices', function() {
     echo 'Invoices';
 });
 
+echo '<pre>';
+print_r($_SERVER);
+echo '</pre>';
+
+die; 
+
 echo $router->resolve($_SERVER['REQUEST_URI']);

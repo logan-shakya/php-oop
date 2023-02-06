@@ -8,6 +8,17 @@ class Home
 {
     public function index(): string
     {
-        return 'Home';
+        echo '<pre>';
+        var_dump($_GET);
+        echo '</pre>';
+
+        echo '<pre>';
+        var_dump($_POST);
+        echo '</pre>';
+
+        return '<form action = "/?foo=bar" method = "post">
+                <label>Amount</label>
+                <input type="text" name="amount" />
+        </form>';
     }
 }
